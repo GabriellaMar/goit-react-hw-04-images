@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ImageGalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
 import styles from './ImageGallery.module.css'
 
@@ -18,3 +19,12 @@ export const ImageGallery = ({ images, onOpenModal }) => {
 
     )
 }
+
+ImageGallery.propTypes ={
+    images: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.object,
+      PropTypes.array,
+    ]).isRequired,
+    onOpenModal: PropTypes.func.isRequired,
+  }
