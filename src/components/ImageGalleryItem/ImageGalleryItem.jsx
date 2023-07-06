@@ -8,7 +8,7 @@ export const ImageGalleryItem = ({ image, onOpenModal }) => {
   };
 
   return (
-    <li key={image.id} className={styles.ImageGalleryItem} onClick={handleImageClick}>
+    <li  className={styles.ImageGalleryItem} onClick={handleImageClick}>
       <img className={styles.ImageGalleryItemImage}
         src={image.webformatURL}
         alt={image.tags}

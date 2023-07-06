@@ -35,7 +35,7 @@ import { useEffect } from "react";
    
     const  handleFormSubmit = searchValue => {
       setPage(1);
-      setImages([]);
+      // setImages([]);
       setSearchValue(searchValue);
       }
 
@@ -54,6 +54,7 @@ import { useEffect } from "react";
       
           if (page === 1) {
             setImages(images);
+            setPage(1);
           } else {
             setImages(prevState => [...prevState, ...images]);
           }
